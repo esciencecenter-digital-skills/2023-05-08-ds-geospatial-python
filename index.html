@@ -1,0 +1,473 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta name="slug" content="2023-05-08-ds-geospatial-python" />
+    <meta name="startdate" content="2023-05-07T22:00:00Z" />
+    <meta name="enddate" content="2023-05-09T22:00:00Z" />
+    <meta name="humandate" content="May 08 - 10, 2023" />
+    <meta name="country" content="NA" />
+    <meta name="venue" content="Online" />
+    <meta name="address" content="NA" />
+    <meta name="latlng" content="NA,NA" />
+    <meta name="language" content="" />
+    <meta name="eventbrite" content="" />
+    <meta name="instructor" content="Francesco Nattino, Ou Ku" />
+    <meta name="helper" content="Johan Hidding, Pranav Chandramouli, Sander van Rijn" />
+    <meta name="contact" content="training@esciencecenter.nl" />
+    <meta name="carpentry" content="ds" />
+
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="">
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2023-05-04 07:00:45 +0000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/lesson.css" />
+
+    
+
+
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/favicons/ds/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/favicons/ds/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/favicons/ds/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/favicons/ds/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/favicons/ds/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/favicons/ds/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/favicons/ds/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/favicons/ds/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/favicons/ds/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/favicons/ds/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/favicons/ds/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/favicons/ds/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/favicons/ds/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Digital Skills - Introduction to Geospatial Raster and Vector Data with Python"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/favicons/ds/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/favicons/ds/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/favicons/ds/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/favicons/ds/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/favicons/ds/mstile-310x310.png" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <title>Online: May 08 - 10, 2023</title>
+  </head>
+  <body>
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      <a href="https://www.esciencecenter.nl/" class="pull-left">
+        <img class="navbar-logo" src="./assets/img/netherlands-escience-center-logo-RGB.svg" alt="The Netherlands eScience Center logo" />
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="./">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        
+
+        
+
+	
+	
+
+	
+        
+        <li><a href="https://esciencecenter-digital-skills.github.io/license">License</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+
+
+
+
+
+
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      
+      <h1>Introduction to Geospatial Raster and Vector Data with Python</h1>
+      
+      <h2>Online</h2>
+      <div class="row">
+        <div class="col-md-6">
+          
+          <p>May 08 - 10, 2023</p>
+          <p>9:00 - 13:00 CEST</p>
+        </div>
+        <div class="col-md-6">
+          <p>
+          <strong>Instructors:</strong>
+          
+          Francesco Nattino, Ou Ku
+          
+          </p>
+          
+          <p>
+          <strong>Helpers:</strong>
+          Johan Hidding, Pranav Chandramouli, Sander van Rijn
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<p><strong>Some adblockers block the registration window. If you do not see the
+  registration box below, please check your adblocker settings.</strong></p>
+<iframe src="https://www.eventbrite.com/tickets-external?eid=533749167127&amp;ref=etckt" frameborder="0" width="100%" height="280px" scrolling="auto">
+</iframe>
+
+<h2 id="general">General Information</h2>
+
+<p>The eScience Center offers a range of free workshops and training courses, open to all researchers affiliated with Dutch research organizations. We organize workshops covering digital skills needed to put reproducible research into practice. These include online collaboration, reproducible code and good programming practices. We also offer more advanced workshops such as GPU Programming, Parallel Programming and Deep Learning.</p>
+
+<p>Python is one of the most popular programming languages for data science and analytics, with a large and steadily growing community in the field of Earth and Space Sciences. In this workshop, we will help participants with a working knowledge of Python to familiarize with the world of geospatial raster and vector data. We will introduce a set of tools from the Python ecosystem and show how these can be used to carry out practical geospatial data analysis tasks. In particular, we will consider satellite images and public geo-datasets and demonstrate how these can be opened, explored, manipulated, combined, and visualized using Python.</p>
+
+<div style="display: flex"><div>
+     <strong>Who:&nbsp;</strong>
+     </div>
+     <div>
+    <p>The participant should:</p>
+    <ul>
+      <li>have working knowledge of Python</li>
+      <li>have had exposure to the Bash shell</li>
+    </ul>
+
+    <p>The participants <strong>DO NOT need to have prior knowledge of the Python tools</strong> this workshop is teaching.</p>
+  </div></div>
+
+<p id="where">
+  <strong>Where:</strong>
+  NA.
+  Get directions with
+  <a href="//www.openstreetmap.org/?mlat=NA&amp;mlon=NA&amp;zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q=NA,NA">Google Maps</a>.
+</p>
+
+<p id="when">
+  <strong>When:</strong>
+  
+    May 08 - 10, 2023, 9:00 - 13:00 CEST.
+  
+</p>
+
+<p id="requirements">
+  <strong>Requirements:</strong>
+  
+    Participants must bring a laptop with a
+    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+  
+  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+</p>
+
+<p id="accessibility">
+  <strong>Accessibility:</strong>
+
+  We are committed to making this workshop
+  accessible to everybody. The workshop organizers have checked that:
+</p>
+<ul>
+  <li>The room is wheelchair / scooter accessible.</li>
+  <li>Accessible restrooms are available.</li>
+</ul>
+<p>
+  Materials will be provided in advance of the workshop and
+  large-print handouts are available if needed by notifying the
+  organizers in advance.  If we can help making learning easier for
+  you (e.g. sign-language interpreters, lactation facilities) please
+  get in touch (using contact details below) and we will
+  attempt to provide them.
+</p>
+
+<p id="contact">
+  <strong>Contact:</strong>
+  Please email
+  
+  
+  
+  or
+  
+  <a href="mailto:training@esciencecenter.nl">training@esciencecenter.nl</a>
+  
+  
+  for more information.
+</p>
+
+<hr />
+
+<h2 id="code-of-conduct">Code of Conduct</h2>
+
+<p>
+Participants are expected to follow these guidelines:
+<ul>
+  <li>Use welcoming and inclusive language</li>
+  <li>Be respectful of different viewpoints and experiences</li>
+  <li>Gracefully accept constructive criticism</li>
+  <li>Focus on what is best for the community</li>
+  <li>Show courtesy and respect towards other community members</li>
+</ul>
+</p>
+
+<h2 id="syllabus">Syllabus</h2>
+<ul>
+  <li>Basics of raster and vector data</li>
+  <li>Introduction to Coordinate Reference System (CRS)</li>
+  <li>Access satellite imagery using Python</li>
+  <li>Read and visualize and process raster/vector data</li>
+  <li>Data analysis with the combination of raster and vector data</li>
+  <li>Parallel computation for geospatial data</li>
+</ul>
+
+<h2 id="schedule">Schedule</h2>
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td> <td>Welcome and icebreaker, setup check </td> </tr>
+      <tr> <td>09:30</td>  <td>Introduction to raster, vector, and CRS </td> </tr>
+      <tr> <td>10:00</td>  <td>Access satellite imagery using Python</td> </tr>
+      <tr> <td>10:15</td>  <td>Coffee break</td> </tr>
+      <tr> <td>10:30</td>  <td>Access satellite imagery using Python</td> </tr>
+      <tr> <td>11:30</td>  <td>Coffee break</td> </tr>
+      <tr> <td>11:45</td>  <td>Read and visualize raster data</td> </tr>
+      <tr> <td>12:45</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>13:00</td>  <td>END</td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 2</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td>  <td>Welcome and icebreaker</td> </tr>
+      <tr> <td>09:15</td>  <td>Read and visualize raster data</td> </tr>
+      <tr> <td>10:15</td>  <td>Coffee break</td> </tr>
+      <tr> <td>10:30</td>  <td>Vector data in Python</td> </tr>
+      <tr> <td>11:30</td>  <td>Coffee break</td> </tr>
+      <tr> <td>11:45</td>  <td>Crop raster data with rioxarray and geopandas</td> </tr>
+      <tr> <td>12:45</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>13:00</td>  <td>END</td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 3</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td>  <td>Welcome and icebreaker</td> </tr>
+      <tr> <td>09:15</td>  <td>Raster Calculations in Python</td> </tr>
+      <tr> <td>10:15</td>  <td>Coffee break</td> </tr>
+      <tr> <td>10:30</td>  <td>Calculating Zonal Statistics on Rasters</td> </tr>
+      <tr> <td>11:30</td>  <td>Coffee break</td> </tr>
+      <tr> <td>11:45</td>  <td>Parallel raster computations using Dask</td> </tr>
+      <tr> <td>12:45</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>13:00</td>  <td>END</td> </tr>
+    </table>
+  </div>
+</div>
+
+<hr />
+
+<h2 id="setup">Setup</h2>
+
+<p>
+  To participate in
+  
+  this
+  
+  workshop,
+  you will need access to software as described below.
+  In addition, you will need an up-to-date web browser.
+</p>
+<p>
+  We maintain a list of common issues that occur during installation as a reference for instructors
+  that may be useful on the
+  <a href="https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+</p>
+
+<h3 id="software-setup">Software setup</h3>
+
+<!-- If the setup instructions need to change, please file an issue here: https://github.com/carpentries-incubator/geospatial-python/issues -->
+<p>To be able to follow this workshop, a few setup steps are required. Please follow the <a href="https://carpentries-incubator.github.io/geospatial-python/setup.html">setup instructions</a> in preparation for the workshop.</p>
+
+<p>This instruction will help you to:</p>
+<ul>
+  <li>download the data required in this workshop</li>
+  <li>install the required software packages to this workshop</li>
+</ul>
+
+<p>Please make sure you have followed this instruction to setup in advance.</p>
+
+
+      
+
+
+<footer>
+  <hr/>
+  <div class="row">
+    <div class="col-md-6" align="left">
+      <h4>
+	Copyright &copy; 2016–2023
+	
+        <a href="https://carpentries.org/">The Carpentries</a>
+	
+      </h4>
+    </div>
+    <div class="col-md-6" align="right">
+      <h4>
+        
+        <a href="mailto:training@esciencecenter.nl">Contact The Training Team</a>
+        
+      </h4>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    
+
+
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/lesson.js"></script>
+
+<script>
+/* Based on https://stackoverflow.com/a/30894829/1802726 */
+var show_instructions = function() {
+     //set all nav tabs to inactive
+    $('.nav-tabs li').removeClass('active');
+
+    //get all nav tabs matching the os and set to active
+    $('.nav-tabs li a[href*="'+localStorage.os+'"]').closest('li').addClass('active');
+
+    //set all tabs to inactive
+    $('.tab-pane').removeClass('active');
+
+    //get all tabs matching the os and set to active
+    $('.tab-pane[id*="'+localStorage.os+'"]').addClass('active');
+}
+
+if (typeof(Storage) !== "undefined") {
+    if (localStorage.os == "undefined") {
+        localStorage.os = "windows";
+    }
+    show_instructions();
+} else {
+    console.log("No localStorage");
+}
+
+/* Based on https://stackoverflow.com/a/30894829/1802726 */
+$('.nav-tabs li a').click(function(){
+    //get selected os
+    localStorage.os = $(this)[0].dataset.os;
+    show_instructions();
+});
+
+  // detect misssing iframe for Eventbrite
+  $(document).ready(function(){
+      if ($('iframe').height() == 0) {
+          $('iframe').before('<p>Looks like your adblocker blocked the registration window. Please navigate to <a href="https://www.eventbrite.com/tickets-external?eid=&ref=etckt">https://www.eventbrite.com/tickets-external?eid=&ref=etckt</a> to register.</p>');
+      }
+  });
+
+  // hide alerts when site is rendered on carpentries.github.io
+  $(document).ready(function() {
+      if (location.href.startsWith("https://carpentries.github.io/workshop-template/")) {
+          $("div.alert").hide();
+      }
+  });
+
+</script>
+
+  </body>
+</html>
