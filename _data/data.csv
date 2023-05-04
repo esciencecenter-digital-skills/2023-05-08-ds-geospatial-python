@@ -1,2 +1,2 @@
 venue,address,country,latitude,longitude,humandate,humantime,startdate,enddate,instructor,helper,carpentry,curriculum,title,slug,flavor
-Online,NA,NA,NA,NA,"May 08 - 10, 2023",9:00 - 13:00 CEST,2023-05-07T22:00:00Z,2023-05-09T22:00:00Z,"Francesco Nattino, Ou Ku","Johan Hidding, Pranav Chandramouli",ds,ds-geospatial,Introduction to Geospatial Raster and Vector Data with Python,2023-05-08-ds-geospatial-python,python
+Online,NA,NA,NA,NA,"May 08 - 10, 2023",9:00 - 13:00 CEST,2023-05-07T22:00:00Z,2023-05-09T22:00:00Z,"Francesco Nattino, Ou Ku","Johan Hidding, Pranav Chandramouli, Sander van Rijn",ds,ds-geospatial,Introduction to Geospatial Raster and Vector Data with Python,2023-05-08-ds-geospatial-python,python
