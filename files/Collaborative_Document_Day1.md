@@ -129,32 +129,6 @@ jupyter lab
 import rioxarray
 ```
 
-
-| Name                     | ✅ or ❌ |
-| ------------------------ | -------- |
-| Agnes Schneider          | ✅       |
-| Ahmed Elghandour         | ✅       |
-| Andy Subiyantoro         | ✅       |
-| Berend-Christiaan Wijers | ✅       |
-| Claudia Ylla Arbos       | ✅       |
-| Enting Tang              | ✅       |
-| Felipe Cifuentes         | ✅       |
-| Feyza Ozkan              | ✅       |
-| Go Sugimoto              | ✅       |
-| Jasper Van doninck       | ✅       |
-| Jiangtao Cai             | ✅       |
-| Jonathan Krikeb          | ✅       |
-| Maaike Maarse            | ✅       |
-| Max Alatieh              | ✅       |
-| Mohammad Faiz Alam       | ✅       |
-| Qianqian Han             | ✅       |
-| Ting Duan                | ✅       |
-| Tuyet Minh Trinh         |          |
-| Yuliia Kazmina           |          |
-| Zengjing Song            | ✅       |
-| Tina Nikaein             | ✅       |
-
-
 - Introduction on raster data and data formats
 
 Python libraries:
@@ -175,12 +149,12 @@ Let’s take a moment to explore the Earth Search STAC catalog, which is the cat
 1. Open the link in your web browser. Which (sub-)catalogs are available?
 2. Open the "Sentinel-2 Level 2A" collection, and select one item from the list. Each item corresponds to a satellite "scene", i.e. a portion of the footage recorded by the satellite at a given time. Have a look at the metadata fields and the list of assets. What kind of data do the assets represent?
 
-Agnes: Q1 subcatalogs of aerial, satellite and radar raster data - DEM, DSM but also spectral & multispectral imagery
+ Q1 subcatalogs of aerial, satellite and radar raster data - DEM, DSM but also spectral & multispectral imagery
  Q2 the bifferent bands and collected information of the Satellite
 
-Q Maaike : it is not clear to me what the data represents, you have to click a dataset to see what it is?
+Q : it is not clear to me what the data represents, you have to click a dataset to see what it is?
 
-Q Qianqian: do all the assets belong to one image (multibands in the same image at the same time)?
+Q : do all the assets belong to one image (multibands in the same image at the same time)?
     - What do you mean when you say "image"? 
     - when I download image from a website, e.g. Landsat, when I choose time and area, there is one image, but includes multibands.
     - The image you see is made from three bands, rendered as red green and blue, but there are many more bands.
@@ -191,7 +165,7 @@ Q Qianqian: do all the assets belong to one image (multibands in the same image 
 Q How can I access older images? 
 
 
-Q, Max Is there any trick to install all the geospatial-python packages in the Google Colab? I don't want to install all manually.
+Q, Is there any trick to install all the geospatial-python packages in the Google Colab? I don't want to install all manually.
     - In Collab this is not possible, but you might like [binder](mybinder.org). You put your notebook in a Github repo, then with a single URL you can have this notebook running.
 
 ## Lecture resumed
@@ -412,25 +386,3 @@ This shows colors only from 2-98 percentiles. So, for the purpose of visualisati
 
 ## 📚 Resources
 
-## Feedback
-Please give us one thing to improve, and one thing you liked
-
-### Improve
-- Seems all pretty good for now -- but the pace is at the max for me. Now I can 'just' follow, but anything faster than that would be too fast.
-- Pace could be higher
-- Leave some (optional) wrap-up/advanced exercises related to what we have learnt
-- Due to my low level of python, I need more explanation about the code.
-- From next time for this type of tutorial, I would suggest to have a set-up session before the actual tutorials starts ,which would be voluntart to participate in (e.g. 30 min)
-- Prepared terminology/glossary would be handy to have beforehand (because some technical terms would be specific to the domain/software)(e.g. scenes, assets etc)
-- Would be good to split the website into several components: 1) collections of data/website links 2) software/env and setup tutorial, 3) the content of actual tutoruial/code
-
-### Like
-
-- Thank you, it was helpful and informative session. I like the presentation and the enthusiastic in this morning.
-
-- Clear and calm explanations. 
-- Giving opportunity for questions and good exercise covering the material and confirming understanding.
-- Clear explanations and exercises matching well the content of the workshop
-- Good introductions and collaborative document well maintained and code explained.
-- It was great.
-- Very good support for helping the setup

@@ -19,9 +19,6 @@ Collaborative Document day 2: [link](https://tinyurl.com/2023-05-08-geospatial-p
 
 Collaborative Document day 3: [link](https://tinyurl.com/2023-05-08-geospatial-python-3) 
 
-## Zoom link
-
-[link](https://us02web.zoom.us/j/83698284199?pwd=cHJjdUNhenlPcDVIVzhleFprRE5Ydz09)
 
 ## 👮Code of Conduct
 
@@ -395,20 +392,3 @@ fields_rasterized_xarr.data = fields_rasterized
 from xrspatial import zonal_stats
 results_stats = zonal_stats(fields_rasterized_xarr, ndvi_squeezed)
 ```
-
-## Tips
-
-- If you publish the code before ahead. then we will test it before
-- I would like to see more exercises. I think a lot of concepts are valuable but having some (more) practical experience could be good. 
-- The scrolling up and down went a bit too fast today, so it was hard to follow some times -- especially with so similar variable names :slightly_smiling_face:  :+1: 
--
-
-## Tops
-+ Clear explanations, relevant techniques, good examples, good pace
-+ Very useful information, both from the workshop content and side information
-+ Good build-up process of the knowledge and tools
-+
-
-## 📚 Resources
-
-- [Post-workshop survey](https://www.surveymonkey.com/r/8TJMM8N)

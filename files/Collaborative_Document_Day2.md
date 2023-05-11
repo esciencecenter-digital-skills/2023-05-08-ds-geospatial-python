@@ -19,9 +19,6 @@ Collaborative Document day 2: [link](https://tinyurl.com/2023-05-08-geospatial-p
 
 Collaborative Document day 3: [link](https://tinyurl.com/2023-05-08-geospatial-python-3) 
 
-## Zoom link
-
-[link](https://us02web.zoom.us/j/83698284199?pwd=cHJjdUNhenlPcDVIVzhleFprRE5Ydz09)
 
 ## 👮Code of Conduct
 
@@ -159,33 +156,6 @@ Now we have an object that PyProj will understand.
 #### Exercise: find the axes units of the CRS
 
 What units are our coordinates in? See if you can find a method to examine this information using `help(crs)` or `dir(crs)`
-
-:::spoiler
-- Agnes Schneider `crs.axis_info; unit_name=metre`
-- Ahmed Elghandour
-- Andy Subiyantoro
-- Berend-Christiaan Wijers `print(crs.axis_info)`
-- Claudia Ylla Arbos: `crs_info = pyproj.CRS.from_user_input(crs)`
-- Enting Tang: crs.axis_info -> unit_name=metre
-- Felipe Cifuentes
-- Feyza Ozkan
-- Go Sugimoto
-- Jasper Van doninck: pyproj.CRS.from_user_input(crs); crs.axis_info
-- Jiangtao Cai ：metre
-- Jonathan Krikeb crs.coordinate_system
-- Maaike Maarse
-- Marcela Carrillo
-- Max_Alatieh = crs.coordinate_system
-- Mohammad Faiz Alam crs (and check axis information)/print(crs.axis_info)
-- Qianqian Han: `crs.axis_info` (`[Axis(name=Easting, abbrev=E, direction=east, unit_auth_code=EPSG, unit_code=9001, unit_name=metre),
- Axis(name=Northing, abbrev=N, direction=north, unit_auth_code=EPSG, unit_code=9001, unit_name=metre)]`)
-- Tina Nikaein
-- Ting Duan meter and degree
-- Tuyet Minh Trinh
-- Yuliia Kazmina
-- Zahid Shah
-- Zengjing Song (crs.axis_info)
-:::
 
 When we run `dir(crs)` we see a lot of methods of the `CRS` class, but also many `__class__` like attributes. These are so called *magic* methods and tell Python how a lot of standard operations should be performed on this object; think of: creating an object, comparison with `==`, conversion to strings, you name it. The `help(crs)` command shows more documentation. This is usually the same documentation as is normally listed in [API documentation](https://pyproj4.github.io/) online. See: [CRS](https://pyproj4.github.io/pyproj/stable/api/crs/crs.html).
 
@@ -444,24 +414,6 @@ wells = gpd.read_file("data/brogmwvolledigeset.zip")
 - Hint 1: The `wells` object contains all the wells in the Netherlands. It might be too big to call `.buffer()` function directly on it. To improve the performance, first crop it with the bounding box of the fields.
 
 - Hint 2: If you load the data again, do not forget the CRS conversion. The file `brogmwvolledigeset.zip` is in CRS 4326.
-
-
-:::spoiler
-
-:::
-
-
-## Feedback
-Please give one tip and one top
-
-### Tips :-1:
-Not always clear why we would want to execute certain actions or apply the functions we do. There were a few skips in the logic
-
-The path problem persists when loading data, and needs to be changed each time which is annoying
-
-### Tops :+1:
-Clear explanations, interesting examples and good exercise, good pace
-Good pace
 
 
 ## 📚 Resources
